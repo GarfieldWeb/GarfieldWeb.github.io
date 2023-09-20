@@ -134,24 +134,45 @@ YWQiXX0.M6ZZpDAX_dMnTp_iZ8d4qsgHDHSoX925m2xVJJPOlpU" width="180" height="300">
 <h1></h1>
 	    
 <html>
+<head>
+  <title>Example Guestbook</title>
 
-<h2 style="color:LightSalmon"> The Garf Guestbook</h2>
-<hr>
-<form method=post action="/cgi-bin/guestBook.pl">
-<input type=hidden name=fields value="Name,Email,Comments">
-<p style="color:Tomato" >Name:</p> <input type=text name=Name><br>
-<p style="color:Tomato" >Comments:</p> <br><textarea name=Comments rows=5 cols=60>
-</textarea><br>
-<input type=submit value="Submit">
-</form>
-<hr noshade>
+  <!-- You will need to customize this page for your own use. -->
+  <!-- See the comments included in the code for hints on customizing. -->
+</head>
+<body>
+  <!--GUESTBOOK--> <!-- Do NOT delete this line! -->
+  <h1>My Guestbook Page</h1>
 
-<!--GUESTBOOK-OPTIONS: maxEntries=10-->
-<!--GUESTBOOK-->
-<!--GUESTBOOK-->
+  <p>Hi, and welcome to my guestbook. Please sign below:</p>
 
-<hr noshade>
+  <p>Last post on 
+  <!-- Do NOT delete this line! --> <!--LASTDATE--> 
+  <!-- Do NOT delete this line! --> <!--POINTER--> 
+  </p>
 
+  <h2>Sign the Guestbook</h2>
+
+  <form method="post" action="https://www.yourdomain.com:8080/cgi-bin/
+  guestbook.pl/the path to this file">
+  <!-- Delete the words "the path to this file" and replace them with
+  the actual path to this html file. -->
+    <p>
+      <label for="name">Name:</label> <input type="text"
+      name="name" size="30" maxlength="30"><br />
+      <label for="address">E-mail address:</label> <input
+      type="text" name="address" size="30" maxlength="30"><br />
+      <label for="body">Text:</label><br />
+      <textarea name="body" rows=15 cols=60></textarea>
+    </p>
+
+    <p>
+      <input type="submit" name="" value="post">
+      <input type="reset" name="" value="clear">
+    </p>
+  </form>
+
+  <!-- Put additional text, like an address or something, here. -->
 </body>
 </html>
 	    
